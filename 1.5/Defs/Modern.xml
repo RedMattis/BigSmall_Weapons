@@ -1,0 +1,108 @@
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BS_GiantMusket</defName>
+    <label>Giant Musket</label>
+    <description>A heavy rifle designed to be wielded by a combat mech for use against other mechs other other heavy military hardware.\n\nThe weapon is too large to be wielded by a regular human, even if they could somehow manage the terrible recoil.\n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
+    <graphicData>
+      <texPath>BS_Weapons/GiantMusket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.55</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.63</equippedDistanceOffset>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>RangedHeavyGiant</li>
+    </weaponTags>
+    <techLevel>Medieval</techLevel>
+    <relicChance>0.05</relicChance>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.84</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BS_GiantMusketShot</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>16.9</range>
+        <soundCast>BS_GiantMusketShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>13</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>BS_GiantMusketShot</defName>
+    <label>bolt-action rifle bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+      <stoppingPower>3.5</stoppingPower>
+      <speed>80</speed>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <SoundDef>
+    <defName>BS_GiantMusketShot</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ThumpCannon_Fire</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>1.05~1.15</pitchRange>
+        <volumeRange>85~100</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

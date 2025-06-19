@@ -1,0 +1,138 @@
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>BS_GiantSalvageClub</defName>
+    <label>giant salvage club</label>
+    <description>A giant club with a bunch of sharp metal pieces stuck in it.</description>
+    <graphicData>
+      <texPath>BS_Weapons/GiantSalvageSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3.2</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <Steel>100</Steel>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.85</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.85</cooldownTime>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>0.1</relicChance>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>BS_GiantShard</defName>
+    <label>giant shard knife</label>
+    <description>A large sharp piece of salvage with a handle tied around it to avoid injuring the wilder. The handle makes it a bit too awkward for a regular-sized person to wield.</description>
+    <graphicData>
+      <texPath>BS_Weapons/ScavengedBlade</texPath>
+      <maskPath>BS_Weapons/ScavengedBlade_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>0.1</relicChance>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

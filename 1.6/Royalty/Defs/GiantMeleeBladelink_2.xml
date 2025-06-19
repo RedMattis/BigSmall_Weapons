@@ -1,0 +1,113 @@
+<Defs>
+  <ThingDef ParentName="BS_GiantWeapon_Bladelink">
+    <defName>BS_VaeSuis_Persona</defName>
+    <label>Persona Vae Suis</label>
+    <description>This enormous spear said to bring disaster. It cuts not with a sharp edge but rather an unbelievable heat that simply vaporizes most that it touches.</description>
+    <weaponTags>
+      <li>UltratechMeleeGiant_Fire</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>BS_Weapons/PlasmaGiantPike</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <statBases>
+      <Mass>14</Mass>
+      <VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.84</VEF_MeleeWeaponRange>
+    </statBases>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>BS_Plasma</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>3</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Stab</def>
+            <amount>15</amount>
+            <chance>1</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>BS_Plasma</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>3</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Cut</def>
+            <amount>18</amount>
+            <chance>1</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+  <ThingDef ParentName="BS_GiantWeapon_Bladelink">
+    <defName>BS_Skarstind_Persona</defName>
+    <label>Persona Skarstind</label>
+    <description>This enormus axe brings the chill of Niflheim itself. Which is a fancy way of saying that the edge is incredibly cold.</description>
+    <weaponTags>
+      <li>UltratechMeleeGiant_Cold</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>BS_Weapons/CryptoGreataxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>2.35</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <statBases>
+      <Mass>15</Mass>
+    </statBases>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.8</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Frostbite</def>
+            <amount>16</amount>
+            <chance>1</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+</Defs>

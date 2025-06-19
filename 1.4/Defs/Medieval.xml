@@ -1,0 +1,200 @@
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>BS_GiantMedievalHammer</defName>
+    <label>giant hammer</label>
+    <description>A huge one-handed hammer which is too unwieldly for normal person to use.</description>
+    <graphicData>
+      <texPath>BS_Weapons/GiantMedievalHammer</texPath>
+      <maskPath>BS_Weapons/GiantMedievalHammer_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.62</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <costStuffCount>135</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <GeneralLaborSpeed>0.15</GeneralLaborSpeed>
+      <ConstructionSpeed>0.25</ConstructionSpeed>
+      <ConstructSuccessChance>0.12</ConstructSuccessChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Stony</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>0.1</relicChance>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>BS_GiantScythe</defName>
+    <label>giant scythe</label>
+    <description>An enormus scythe for harvesting very large crops (or smaller creatures). Aside of double as a mean-looking pick it can also be effectively used to trip or sweep the legs of/off other giants.</description>
+    <graphicData>
+      <texPath>BS_Weapons/GiantScythe</texPath>
+      <maskPath>BS_Weapons/GiantScythe_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>2.6</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeFarmGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <costStuffCount>135</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.40</PlantWorkSpeed>
+      <PlantHarvestYield>0.1</PlantHarvestYield>
+      <ForagedNutritionPerDay>0.2</ForagedNutritionPerDay>
+    </equippedStatOffsets>
+    
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>scythe blade</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>scythe point</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>0.1</relicChance>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>BS_OniClub</defName>
+    <label>huge kanabō</label>
+    <description>A giant spiked club that is far too unwieldly for normal person to use.</description>
+    <graphicData>
+      <texPath>BS_Weapons/OniClub</texPath>
+      <maskPath>BS_Weapons/OniClub_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>2.3</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <costStuffCount>300</costStuffCount>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>18</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>2</relicChance>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+</Defs>
