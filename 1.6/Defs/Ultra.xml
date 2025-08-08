@@ -68,7 +68,7 @@
   <ThingDef ParentName="BS_GiantMeleeUltratech">
     <defName>BS_Skarstind</defName>
     <label>Skarstind</label>
-    <description>This enormus axe brings the chill of Niflheim itself. Which is a fancy way of saying that the cryogenic properties of the edge is devastatingly dangerous.</description>
+    <description>This enormous axe brings the chill of Niflheim itself. Which is a fancy way of saying that the cryogenic properties of the edge is devastatingly dangerous.</description>
     <weaponTags>
       <li>UltratechMeleeGiant_Cold</li>
     </weaponTags>

@@ -42,6 +42,14 @@
     </stuffCategories>
     <tools>
       <li>
+        <label>handle</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
         <label>head</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>

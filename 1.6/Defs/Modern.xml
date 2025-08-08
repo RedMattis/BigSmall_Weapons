@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="BS_GiantMusket">
     <defName>BS_GiantMusket</defName>
     <label>Giant Musket</label>
     <description>A heavy rifle designed to be wielded by a combat mech for use against other mechs other other heavy military hardware.\n\nThe weapon is too large to be wielded by a regular human, even if they could somehow manage the terrible recoil.\n\nCan be wielded by giant, herculean, or warcasket pawns.</description>

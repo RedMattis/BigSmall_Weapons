@@ -1,0 +1,68 @@
+<Defs>
+
+  <ThingDef ParentName="BS_GiantMusket" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_GiantMusket_Unique</defName>
+    <label>Unique Giant Musket</label>
+    <description>A giant musket with customized parts.</description>
+    <graphicData>
+      <texPath>BS_Weapons/GiantMusket_Unique</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Rifle</li>
+          <li>LowStoppingPower</li>
+          <li>BS_SingleShot</li>
+          <li>BS_SingleShotBullet</li>
+          <li>BS_PrimitiveGun</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>giant musket</li>
+          <li>cannonball</li>
+          <li>elephant gun</li>
+          <li>thrumbo gun</li>
+          <li>culverin</li>
+          <li>cannon</li>
+          <li>man-o-war</li>
+          <li>napoleon</li>
+          <li>boomer</li>
+          <li>big bertha</li>
+          <li>ogre hand cannon</li>
+          <li>knight-be-gone</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False" >
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_GiantMusket</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+</Defs>

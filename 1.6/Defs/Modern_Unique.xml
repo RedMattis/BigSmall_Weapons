@@ -1,0 +1,198 @@
+<Defs>
+  <ThingDef ParentName="BS_JotunRifle" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_JotunRifle_Unique</defName>
+    <label>Unique Warmech Anti-Material Rifle</label>
+    <description>A warmech anti-material rifle with customized parts.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantAntiMaterialRifle_Unique</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Rifle</li>
+          <li>Sighted</li>
+          <li>LowStoppingPower</li>
+          <li>BS_SingleShot</li>
+          <li>BS_SingleShotBullet</li>
+          <li>BS_ModernGun</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>anti-material</li>
+          <li>warmech</li>
+          <li>mechhive's bane</li>
+          <li>over-penetrator</li>
+          <li>annihilator</li>
+          <li>giant killer</li>
+          <li>overkill</li>
+          <li>micro-gravastar</li>
+          <li>titan's end</li>
+          <li>world-piercer</li>
+          <li>autobots' demise</li>
+          <li>anti-everything</li>
+          <li>surt's bb-gun</li>
+          <li>can opener</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False" >
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_JotunRifle</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GiantMinigun" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_GiantMinigun_Unique</defName>
+    <label>Unique Warmech Machinegun</label>
+    <description>A warmech machinegun with customized parts.</description>
+    <graphicData>
+      <texPath>Item/BS_Giant_MachineGun_Unique</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>BurstFire</li>
+          <li>LowStoppingPower</li>
+          <li>BS_ModernGun</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>warmech machinegun</li>
+          <li>giant minigun</li>
+          <li>man-mower</li>
+          <li>lead tempest</li>
+          <li>bullet storm</li>
+          <li>titan's fury</li>
+          <li>wrath</li>
+          <li>death dealer</li>
+          <li>storm bringer</li>
+          <li>death tempest</li>
+          <li>demon hose</li>
+          <li>galactic typewriter</li>
+          <li>light drizzle</li>
+          <li>candy-dispenser</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False" >
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_GiantMinigun</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_JotunRocketLauncher" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_JotunRocketLauncher_Unique</defName>
+    <label>Unique Warmech Rocket Launcher</label>
+    <description>A warmech rocket launcher with customized parts.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantRocketLauncher_Unique</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>Gun</li>
+          <li>BS_SingleShot</li>
+          <li>BS_ModernGun</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>warmech rocket launcher</li>
+          <li>rocket launcher</li>
+          <li>big bang</li>
+          <li>devastator</li>
+          <li>bunker buster</li>
+          <li>siege engine</li>
+          <li>demolisher</li>
+          <li>castle crusher</li>
+          <li>apocalypse</li>
+          <li>ragnarok</li>
+          <li>world ender</li>
+          <li>hyperion</li>
+          <li>room cleaner</li>
+          <li>quasar</li>
+          <li>mini-nuker</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False" >
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_JotunRocketLauncher</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+</Defs>
